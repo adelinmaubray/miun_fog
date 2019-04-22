@@ -10,13 +10,13 @@ def fermentation_creation_wrong():
     input_1 = 100
     input_1_tol = input_1*tol/2
 
-    treacle = np.random.normal(t_treacle*10,t_treacle_tol/1.0,time)
-    seeding = np.random.normal(t_seeding*10,t_seeding_tol/1.0,time)
-    water = np.random.normal(t_water*10,t_water_tol/1.0,time)
-    temperature = np.random.normal(T_1*10,T_1_tol/1.0,time)
-    pression = np.random.normal(p*10,p_tol/1.0,time)
-    pH_temp = np.random.normal(pH*10,pH_tol/1.0,time)
-    out = np.random.normal(pourcentage_output_1*10,pourcentage_output_1_tol/1.0,time)
+    treacle = np.random.normal(t_treacle,t_treacle_tol/1.0,time)
+    seeding = np.random.normal(t_seeding,t_seeding_tol/1.0,time)
+    water = np.random.normal(t_water,t_water_tol/1.0,time)
+    temperature = np.random.normal(T_1,T_1_tol/1.0,time)
+    pression = np.random.normal(p,p_tol/1.0,time)
+    pH_temp = np.random.normal(pH,pH_tol/1.0,time)
+    out = np.random.normal(pourcentage_output_1,pourcentage_output_1_tol/1.0,time)
 
     df = pd.DataFrame({'Treacle' : treacle,
                         'Seeding' : seeding,
@@ -62,9 +62,9 @@ def fermentation_creation_wrong():
     return df
 
 def separator_creation_wrong():
-    tour_minute = np.random.normal(tr_min*10,tr_min_tol*1.5,time)
-    tempature = np.random.normal(T_2*10,T_2_tol*1.5,time)
-    out = np.random.normal(t_output_2*10,t_output_2_tol*1.5,time)
+    tour_minute = np.random.normal(tr_min,tr_min_tol*1.5,time)
+    tempature = np.random.normal(T_2,T_2_tol*1.5,time)
+    out = np.random.normal(t_output_2,t_output_2_tol*1.5,time)
 
     df = pd.DataFrame({'Rotation Speed' : tour_minute,
                         'Temperature' : tempature,
@@ -94,8 +94,8 @@ def separator_creation_wrong():
     return df
 
 def washer_creation_wrong():
-    hum = np.random.normal(humidity*10,humidity_tol,time)
-    out = np.random.normal(t_output_3*10,t_output_3_tol,time)
+    hum = np.random.normal(humidity,humidity_tol,time)
+    out = np.random.normal(t_output_3,t_output_3_tol,time)
 
     df = pd.DataFrame({'Humidity' : hum,
                         'Output' : out})
