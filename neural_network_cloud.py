@@ -22,7 +22,7 @@ model = load_model('models/fog_6_128_model.h5')
 ############################
 
 print("Importing features...")
-features = pd.read_csv("output/output.txt", sep='\t')
+features = pd.read_csv("output/fog_6_128_output.txt", sep='\t')
 
 ##########################
 ### New model creation ###
