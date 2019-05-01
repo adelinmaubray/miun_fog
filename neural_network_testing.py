@@ -14,7 +14,7 @@ from print_time import print_time
 ##################
 
 print("Loading model...")
-model = load_model('models/OK_128_model.h5')
+model = load_model('models/128_model.h5')
 # model.summary()
 
 ########################
