@@ -1,1 +1,9 @@
-\data\EasyData
+.vscode/
+__pycache__/
+
+data/
+output/
+
+!.gitignore
+!data/data_test.txt
+!output/fog_6_128_output.txt
