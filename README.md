@@ -6,12 +6,12 @@ The goal of this Master's Thesis was to survey if it is feasible, useful and eff
 
 ### Data creation
 
-Before running Deep Learning algorithms, it is necessary to create data.  The input data have 12-dimension size.  The output is 0 (wrong data) or 1 (righ data).  Sensors make measurements every 10 seconds during 60 days.  6 (min) x 60 (h) x 24 (j) x 60 = 518.400 measurements.
+Before running Deep Learning algorithms, it is necessary to create data.  The input data have 12-dimension size.  The output is 0 (not_running data) or 1 (running data).  Sensors make measurements every 10 seconds during 60 days.  6 (min) x 60 (h) x 24 (j) x 60 = 518.400 measurements.
 
 * ```print_time.py``` is just a function which print the time difference between to moments
 * ```parameters.py``` provides all the parameters for the chosen industrial scenario.  There are the normal variables and the tolerances
-* ```data_creation_righ.py``` allows to create the "right data" (output = 1).  It creates 1 file per day per machine ```data/machineXX.txt```
-* ```data_creation_wrong.py``` allows to create the "wrong data" (output = 0) according several conditions.  It creates 1 file per day per machine ```data/machine_wrongXX.txt```
+* ```data_creation_running.py``` allows to create the "running data" (output = 1).  It creates 1 file per day per machine ```data/machineXX.txt```
+* ```data_creation_not_running.py``` allows to create the "not running data" (output = 0) according several conditions.  It creates 1 file per day per machine ```data/machine_wrongXX.txt```
 * ```data_creation_merge.py``` allows to merge all the created files in only one file ```data/data.txt```.  This file is too large for GitHub, so ```data/data_test.txt``` is here as an example
 * ```data_creation_importation.py``` allows to import the data file in a Python Pandas.DataFrame
 
