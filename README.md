@@ -24,7 +24,7 @@ The first investigation was to train and test the deep neural network on a Fog n
 
 ### Testing in a Fog architecture
 
-The last step is to deploy a little Fof architecture (one node) for the testing phase.  The lower layer are processed in the Fog node and the higher in the Cloud.  ```models/fog_6_128_model.h5``` is the model used for this part.
+The last step is to deploy a little Fog architecture (one node) for the testing phase.  The lower layer are processed in the Fog node and the higher in the Cloud.  ```models/fog_6_128_model.h5``` is the model used for this part.
 
 * ```neural_network_fog.py``` takes the input data and generates the intermediate features (by using a Keras function) which are saved in the ```output/```.  ```output/fog_6_128_output.txt``` are the intermediate generated features.
 * ```neural_network_cloud.py``` takes the created features and process the higher layers.
