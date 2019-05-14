@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn import metrics
+from sklearn.metrics import accuracy_score
 
 import pandas as pd
 import numpy as np
@@ -45,6 +45,6 @@ print_time(start,end)
 ### Accuracy ###
 ################
 
-score = metrics.accuracy_score(y_test, y_pred)
+score = accuracy_score(y_test, y_pred)
 print("Accuracy score:")
 print(score)
