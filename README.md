@@ -29,3 +29,12 @@ The last step is to deploy a little Fog architecture (one node) for the testing 
 * ```neural_network_fog.py``` takes the input data and generates the intermediate features (by using a Keras function) which are saved in the ```output/```.  ```output/fog_6_128_output.txt``` are the intermediate generated features.
 * ```neural_network_cloud.py``` takes the created features and process the higher layers.
 * ```neural_network_comparison.py``` is just here to compare the performances of doing the all testing phase in the Cloud by using the same Keras function
+
+### Comparison with other Machine Learning algorithms
+
+It is legitimate to wonder if there are no better algorithms, that's why other Machine Learning algorithms have been implemented to make a comparison of the performance.
+
+* ```comparison_knn.py``` implements the K-Nearest Neighbor algorithm
+* ```comparison_perceptron.py``` implements the Perceptron algorithm
+* ```comparison_svm.py``` implements the Support Vector Machine algorithm
+* ```comparison_tree.py``` implements the Decision Tree algorithm
