@@ -22,6 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,test_size = 0.25, rando
 ### Model Training ###
 ######################
 
+print("Training...")
 knn = KNeighborsClassifier(n_neighbors = 10)
 start = time.time()
 knn.fit(X_train, y_train)
@@ -33,6 +34,7 @@ print_time(start,end)
 ### Model Testing ###
 #####################
 
+print("Testing...")
 start = time.time()
 y_pred = knn.predict(X_test)
 end = time.time()
